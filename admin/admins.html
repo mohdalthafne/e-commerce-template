@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome Style File Css Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom Css File Cdn Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <div class="logo">
+                <a href="">NXT <i class="fa-solid fa-forward"></i></a>
+            </div>
+            <nav class="navbar">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">Admins</a>
+                <a href="">Users</a>
+                <a href="">Messages</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fa-solid fa-bars"></div>
+                <div id="user-btn" class="fa-solid fa-user"></div>
+            </div>
+            <div class="profile">
+                <p>Muhammed Althaf NE</p>
+                <a href="" class="btn">Update Profile</a>
+                <div class="flex-btn">
+                    <a href="" class="option-btn">Login</a>
+                    <a href="" class="option-btn">Register</a>
+                </div>
+                <a href="" onclick="return confirm('Are You Sure To Logout From This Website?');" class="delete-btn">Logout</a>
+            </div>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+    <!-- admins accounts section starts -->
+    <section class="accounts">
+        <h1 class="heading">admins account</h1>
+        <div class="box-container">
+            <div class="box">
+                <p>Register New Admin</p>
+                <a href="" class="option-btn">register</a>
+            </div>
+            <div class="box">
+                <p>admin id: <span></span></p>
+                <p>username: <span></span></p>
+                <div class="flex-btn">
+                    <a href="" class="delete-btn" onclick="return confirm('Are You Sure To Delete This Admin Account?');">Delete</a>
+                    <a href="" class="option-btn">update</a>
+                </div>
+            </div>
+            <p class="empty">no accounts available yet!!</p>
+        </div>
+    </section>
+    <!-- admins accounts section ends -->
+
+    <!-- Custom JS File Cdn Link -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

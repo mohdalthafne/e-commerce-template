@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXT &vert; The Next Generation Path To The World Of Shopping</title>
+
+    <!-- Custom Stylesheet Cdn Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font awesome style css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- swiper js css cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+</head>
+<body>
+
+    <!-- checkout header starts -->
+    <div class="ch-header">
+        <div class="left">
+            <a href=""><i class="fa-solid fa-arrow-left"></i> Back To Cart</a>
+        </div>
+        <div class="center">
+            <span><span>Secured Checkout</span></span>
+        </div>
+        <div class="right">
+            <a href="">NXT <i class="fa-solid fa-forward"></i></a>
+        </div>
+    </div>
+    <!-- checkout header ends -->
+
+    
+
+    <!-- checkout section starts -->
+    <section class="checkout-orders">
+        <form action="" method="post">
+            <h3>your orders</h3>
+            <div class="display-orders">
+                <p>Apple Iphone 15 Pro Max <span>(SAR 5499 x 1)</span></p>
+                <div class="grand-total">Grand Total: <span>SAR 5499/-</span></div>
+            </div>
+            <h3>Place Your Orders</h3>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Your Name</span>
+                    <input type="text" name="name" placeholder="Enter Your Name" class="box" maxlength="20" required>
+                </div>
+                <div class="inputBox">
+                    <span>Your Number</span>
+                    <input type="number" name="number" placeholder="Enter Your Phone Number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+                </div>
+                <div class="inputBox">
+                    <span>Street Name</span>
+                    <input type="text" name="street" placeholder="Enter Your Street Name" required class="box">
+                </div>
+                <div class="inputBox">
+                    <span>Building Name/Number</span>
+                    <input type="text" name="building" placeholder="Enter Builfing Name/Number" required class="box">
+                </div>
+                <div class="inputBox">
+                    <span>City</span>
+                    <input type="text" name="city" placeholder="Enter Your City Name" class="box" required>
+                </div>
+                <div class="inputBox">
+                    <span>Area</span>
+                    <input type="text" name="area" placeholder="Enter Your Area Name" class="box" required>
+                </div>
+                <div class="inputBox">
+                    <span>Province</span>
+                    <select name="province" class="box" required>
+                        <option value="" selected disabled>-- Select Your Province --</option>
+                        <option value="Riyadh">Riyadh Province</option>
+                        <option value="Makkah">Makkah Province</option>
+                        <option value="Eastern">Eastern Province</option>
+                        <option value="Madhinah">Madhinah Province</option>
+                        <option value="Al Baha">Al Baha Province</option>
+                        <option value="Al Jawf">Al Jawf Province</option>
+                        <option value="Northern Borders">Northern Borders Province</option>
+                        <option value="Qassim">Qassim Province</option>
+                        <option value="Hail">Hail Province</option>
+                        <option value="Tabuk">Tabuk Province</option>
+                        <option value="Aseer">Aseer Province</option>
+                        <option value="Jizan">Jizan Province</option>
+                        <option value="Najran">Najran Province</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Nearest Landmark</span>
+                    <input type="text" name="landmark" placeholder="Enter Nearest Landmark" class="box" required>
+                </div>
+                
+            </div>
+
+            <div class="inputBox" style="width: 100%;">
+                <span>Payment Method</span>
+                <select name="method" class="box" required style="width: 100%;">
+                    <option value="" disabled selected>-- Select A Payment Method --</option>
+                    <option value="Cash On Delivery">Cash On Delivery</option>
+                    <option value="Credit/Debit Card">Credit/Debit Card</option>
+                    <option value="Tabby">Tabby</option>
+                    <option value="Tamara">Tamara</option>
+                </select>
+            </div> 
+
+            <button class="btn btn-primary" name="order" type="submit" style="width: 100%;">Place Your Order <i class="fa-solid fa-forward"></i></button>
+
+    <div class="images" style="margin-top: 10px;">
+        <span>We Accept</span> <br> 
+        <img src="./images/pmodes/card-mada.svg" alt="">
+        <img src="./images/pmodes/card-mastercard.svg" alt="">
+        <img src="./images/pmodes/card-visa.svg" alt="">
+        <img src="./images/pmodes/card-amex.svg" alt="">
+        <img src="./images/pmodes/tabby_v2.svg" alt="">
+        <img src="./images/pmodes/tamara-en.svg" alt="">
+        <img src="./images/pmodes/cod-en.svg" alt="">
+    </div>
+            
+             <!-- security information starts -->
+    <div class="security">
+        <div class="head-tag">
+            
+            <span><img src="./images/pmodes/lock_dark.svg" alt=""> Security And Privacy</span>
+            <p>Our Checkout System Is Safe And Secure. Your Personal & Payment Information Is Securely Transmitted Via AES 128-bit Encryption. We Don't Store Any Payment Card Information On Our System</p>
+            <p>&copy; Copyrights @2023 <span>Al Barrak</span> &vert; <span>NXT</span> E-COmmerce Technology Is A Subsidary Company Undertaken By <span>Al Barrak Enterprises</span></p>
+            <p>Developed & Maintained By <span>ABITS</span></p>
+            <p><a href="">Terms Of Use</a> <a href="">Terms Of Sale</a> <a href="">Privacy Policy</a></p>   
+        </div>
+    </div>
+    <!-- security information ends -->
+        </form>
+    </section>
+    <!-- checkout section ends -->
+
+    <!-- checkout footer starts -->
+    <div class="ch-footer">
+        <div class="accept">
+        </div>
+        <div class="terms">
+
+        </div>
+    </div>
+    <!-- checkout footer ends -->
+
+    
+
+    <!-- Custom Js Script File Cdn Link -->
+    <script src="./js/app.js"></script>
+
+ 
+
+      
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome Style File Css Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom Css File Cdn Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <div class="logo">
+                <a href="">NXT <i class="fa-solid fa-forward"></i></a>
+            </div>
+            <nav class="navbar">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">Admins</a>
+                <a href="">Users</a>
+                <a href="">Messages</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fa-solid fa-bars"></div>
+                <div id="user-btn" class="fa-solid fa-user"></div>
+            </div>
+            <div class="profile">
+                <p>Muhammed Althaf NE</p>
+                <a href="" class="btn">Update Profile</a>
+                <div class="flex-btn">
+                    <a href="" class="option-btn">Login</a>
+                    <a href="" class="option-btn">Register</a>
+                </div>
+                <a href="" onclick="return confirm('Are You Sure To Logout From This Website?');" class="delete-btn">Logout</a>
+            </div>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+    <!-- placed orders section starts -->
+    <section class="placed-orders">
+        <h1 class="heading">placed orders</h1>
+        <div class="box-container">
+            <div class="box">
+                <p>user id</p>
+                <p>placed on</p>
+                <p>name</p>
+                <p>email</p>
+                <p>number</p>
+                <p>address</p>
+                <p>total products</p>
+                <p>total price</p>
+                <p>payment method</p>
+                <select name="" class="drop-down">
+                    <option value="">pending</option>
+                    <option value="">completed</option>
+                </select>
+                <div class="flex-btn">
+                    <input type="submit" value="update" name="update_payment" class="btn">
+                    <a href="" class="delete-btn" onclick="return confirm('Are You Sure To Delete This Order?');">delete</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- placed orders section ends -->
+
+    <!-- Custom JS File Cdn Link -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

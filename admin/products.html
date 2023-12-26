@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome Style File Css Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom Css File Cdn Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <div class="logo">
+                <a href="">NXT <i class="fa-solid fa-forward"></i></a>
+            </div>
+            <nav class="navbar">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">Admins</a>
+                <a href="">Users</a>
+                <a href="">Messages</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fa-solid fa-bars"></div>
+                <div id="user-btn" class="fa-solid fa-user"></div>
+            </div>
+            <div class="profile">
+                <p>Muhammed Althaf NE</p>
+                <a href="" class="btn">Update Profile</a>
+                <div class="flex-btn">
+                    <a href="" class="option-btn">Login</a>
+                    <a href="" class="option-btn">Register</a>
+                </div>
+                <a href="" onclick="return confirm('Are You Sure To Logout From This Website?');" class="delete-btn">Logout</a>
+            </div>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+    <!-- product adding section starts -->
+
+    <section class="add-products">
+        <form action="">
+            <h3>add products</h3>
+            <input type="text" required placeholder="Enter Product Name" name="name" maxlength="100" class="box">
+            <input type="number" min="0" max="9999999999" required placeholder="Enter Product Price" name="price" onkeypress="if(this.value.lenght == 10) return false;" class="box">
+            <select name="brand" class="box" required>
+                <option value="" selected disabled>-- Select Your Brand --</option>
+                <option value="">Samsung</option>
+                <option value="">Apple</option>
+                <option value="">Xioami</option>
+                <option value="">Vivo</option>
+                <option value="">Huawei</option>
+                <option value="">Realme</option>
+                <option value="">One Plus</option>
+                <option value="">Honor</option>
+                <option value="">Lenovo</option>
+                <option value="">Motorola</option>
+                <option value="">Tecno</option>
+                <option value="">Oppo</option>
+                <option value="">Infinix</option>
+                <option value="">Dell</option>
+                <option value="">Hp</option>
+                <option value="">Microsoft</option>
+                <option value="">Asus</option>
+                <option value="">Acer</option>
+                <option value="">Generic</option>
+            </select>
+            <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png, image/webp, image/svg">
+            <input type="submit" value="add product" name="add_product" class="btn">
+        </form>
+    </section>
+    <!-- product adding section ends -->
+
+    <!-- show products section starts -->
+    <section class="show-products" style="padding-top: 0;">
+    <div class="box-container">
+        <div class="box">
+            <img src="../images/product-1.png" alt="">
+            <div class="flex">
+                <div class="price"><span>SAR</span>5499<span>/-</span></div>
+            </div>
+            <div class="name">Apple Iphone 15 Pro Max</div>
+            <div class="flex-btn">
+                <a href="" class="option-btn">update</a>
+                <a href="" class="delete-btn" onclick="return confirm('Are You Sure To Delete This Product?');">delete</a>
+            </div>
+        </div>
+        <p class="empty">No Products Added Yet!!</p>
+    </div>
+    </section>
+    <!-- show products section ends -->
+
+    <!-- Custom JS File Cdn Link -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
